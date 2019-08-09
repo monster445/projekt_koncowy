@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+    <body class="clearfix">
+    <a class="btn btn-info right" href="/logout/">Logout</a>
+<h2>Welcome, {{ logged_user }}!</h2>
+
+    <br>
+
+    <a class="btn btn-info left" href="/calendar/">Timetable</a>
+
+</form>
+{% endblock %}

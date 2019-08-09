@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Create User{% endblock %}
+
+{% block content %}
+    <body class="clearfix">
+<h2>Create User</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button class="btn btn-info" type="submit">Create User</button>
+    <br>
+        <a class="btn btn-info left" href="/login/">Back</a>
+</form>
+{% endblock %}
